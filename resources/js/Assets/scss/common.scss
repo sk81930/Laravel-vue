@@ -1,0 +1,14 @@
+.ck-editor .ck-editor__main .ck-content {
+    min-height: 300px;
+}
+.router-link-active {
+    background: #28b2fafa;
+    color: #000 !important;
+}
+.inner-dd {
+     margin-top: 23px; 
+}
+.inner-dd:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0;
+}

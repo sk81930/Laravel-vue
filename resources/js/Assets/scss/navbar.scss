@@ -1,0 +1,111 @@
+$color_1: #f2f2f2;
+$color_2: #000;
+$color_3: #fff;
+$background-color_1: #28b2fa;
+$background-color_2: #ddd;
+$background-color_3: #111;
+
+.navbar {
+  background-color: $background-color_1;
+  overflow: hidden;
+  height: 63px;
+  a {
+    display: block;
+    color: #f2f2f2; 
+    text-align: center;
+    padding: 2px 13px;
+    text-decoration: none;
+    font-size: 17px;
+    &:hover {
+      background-color: $background-color_2;
+      color: $color_2;
+    }
+  }
+  ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+  }
+}
+.navbaropen {
+  background-color: $background-color_1;
+  overflow: hidden;
+  height: 63px;
+  margin-left: 265px;
+}
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $background-color_3;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.3s;
+  a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px; 
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+    &:hover {
+      color: $color_3;
+    }
+  }
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+.sidenavopen {
+  height: 100%;
+  width: 265px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $background-color_3;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+#main {
+  transition: margin-left 0.3s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+.mainopen {
+  transition: margin-left 0.3s;
+  padding: 20px;
+  overflow: hidden;
+  width: calc(100% - 265px) !important;
+  margin-left: 265px;
+}
+nav {
+  transition: margin-left 0.3s;
+}
+.bar {
+  display: block;
+  height: 5px;
+  width: 35px;
+  background: #000;
+  margin: 5px auto;
+  transition: all .3s ease;
+}
+.midopen {
+  width: 0;
+}
+.topopen {
+  transform: translateY(10px) rotateZ(45deg);
+}
+.botopen {
+  transform: translateY(-10px) rotateZ(-45deg);
+}
